@@ -32,4 +32,9 @@ router.post('/ephemeral_keys', async function(req, res, next) {
   }
 });
 
+router.post('/delete_account', function(req, res, next) {
+  console.log('request', req.query);
+  res.send('respond with a resource');
+});
+
 module.exports = router;
